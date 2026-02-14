@@ -122,6 +122,8 @@ Requires `OPENAI_API_KEY`. Results are written under `Testing/` (e.g. `ragas_res
 
 - Designed as a **personal tool** , not for a company setting
 - Users can be **the builder (me) or external users** — e.g. to look up information about my life, ask about events, or send me an email.
+- Queries can be fact-based or more comprehensive about me
+- Any questions that are not about me will not be answered and redirected back to about me
 
 ---
 
@@ -223,4 +225,4 @@ Note: During generation we pass the **previous 4 messages** and a **conversation
 - Evaluation for retrieval (e.g. retrieval-level metrics).
 - Handle more complex / multi-hop queries (multiple sub-questions in one query).
 - Re-ranking of retrieved results (especially with larger document sets).
-- More robust tool-calling evaluation.
+- Tool-calling evaluation.

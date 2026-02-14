@@ -203,6 +203,7 @@ A user **query** first hits the **agent** (LangGraph). The agent decides whether
 **Evaluation**
 
 - Used a set of **13 test queries** (curated by me), run against the pipeline and scored with RAGAS.
+- Evaluated using only fact-based queries for now (Noise Sensitivity was high along with the correct answer other extra information was also being generated so i modified the prompt to make it strictly answer to the point)
 
 | Model         | Noise sensitivity | Answer relevancy | Faithfulness | Avg time (s) | Avg cost   |
 |---------------|-------------------|------------------|--------------|---------------|------------|
@@ -211,6 +212,7 @@ A user **query** first hits the **agent** (LangGraph). The agent decides whether
 | gpt-4.1-mini  | 0.398             | 0.570            | 0.786        | 1.54          | 0.000569   |
 
 **GPT-4.1-nano** performed best on answer relevancy and faithfulness while having the lowest latency and cost, so we use it for generation.
+
 
 **Generation**
 

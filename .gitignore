@@ -1,0 +1,35 @@
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+env/
+
+# Vector store data
+vector_store/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Google Calendar OAuth tokens
+token.json
+GOOGLE_CLOUD_SETUP.md
+client_secret_415415152406-5radj3tnplsg8m5mibigdfnfi1002aeb.apps.googleusercontent.com.json

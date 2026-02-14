@@ -1,0 +1,26 @@
+[
+  {
+    "model": "gpt-4o-mini",
+    "noise_sensitivity": 0.3762820512820513,
+    "answer_relevancy": 0.453957821897836,
+    "faithfulness": 0.6136446886446886,
+    "avg_time_taken": 2.326553846153846,
+    "avg_cost": 0.0002127923076923077
+  },
+  {
+    "model": "gpt-4.1-nano",
+    "noise_sensitivity": 0.3794871794871795,
+    "answer_relevancy": 0.6318106624518243,
+    "faithfulness": 0.7653846153846153,
+    "avg_time_taken": 0.8083923076923077,
+    "avg_cost": 0.00013863076923076924
+  },
+  {
+    "model": "gpt-4.1-mini",
+    "noise_sensitivity": 0.3983516483516484,
+    "answer_relevancy": 0.570096355237276,
+    "faithfulness": 0.7858974358974359,
+    "avg_time_taken": 1.537776923076923,
+    "avg_cost": 0.0005694153846153847
+  }
+]

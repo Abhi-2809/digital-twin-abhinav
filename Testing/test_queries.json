@@ -1,0 +1,55 @@
+[
+    {
+      "user_input": "Hey, where did you grow up?",
+      "reference": "I grew up in Hyderabad, India."
+    },
+    {
+      "user_input": "Which school did you go to for grades 1 through 10?",
+      "reference": "I attended Delhi Public School (DPS) in Hyderabad from grade 1 to 10."
+    },
+    {
+      "user_input": "What did you study at BITS Pilani?",
+      "reference": "I completed an integrated MSc in Mathematics and a B.E. in Electronics and Communication at BITS Pilani Hyderabad Campus."
+    },
+    {
+      "user_input": "Where'd you do your Master's in Data Science?",
+      "reference": "I did my Master of Science in Data Science at the University of Wisconsin-Madison."
+    },
+    {
+      "user_input": "What's your current job?",
+      "reference": "I'm an AI Engineer at Flywl, a cloud marketplace startup in California."
+    },
+    {
+      "user_input": "How many documents did your RAG pipeline at Flywl index?",
+      "reference": "Over 35,000 marketplace documents."
+    },
+    {
+      "user_input": "What publication came from your Wisconsin research?",
+      "reference": "EMNLP 2025 publication on improving task diversity in label-efficient LLM fine-tuning."
+    },
+    {
+      "user_input": "How many transcripts did you fine-tune LLMs on at Asurion?",
+      "reference": "Over 30,000 customer support transcripts."
+    },
+    {
+      "user_input": "What error rate reduction did you achieve at NTU?",
+      "reference": "5% reduction in diarization error rate."
+    },
+    {
+      "user_input": "What's your contact email?",
+      "reference": "arabellyabhinav28@gmail.com"
+    },
+    {
+      "user_input": "In Never Split the Difference, what is the labeling technique?",
+      "reference": "Labeling emotions like 'It seems like you're experiencing a high amount of stress' to help people open up."
+    },
+    {
+      "user_input": "In Thinking, Fast and Slow, what are System 1 and System 2?",
+      "reference": "System 1 is fast and intuitive; System 2 is slow and deliberate."
+    },
+    {
+      "user_input": "How many products did you deduplicate at Flywl?",
+      "reference": "More than 6,000 products across AWS, GCP, and Azure marketplaces."
+    }
+  ]
+  

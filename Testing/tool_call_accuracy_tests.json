@@ -1,0 +1,170 @@
+[
+  {
+    "name": "news_tool_call",
+    "description": "Multi-turn conversation testing get_daily_news_summary tool calls",
+    "user_input": [
+      {
+        "type": "human",
+        "content": "Give me today's news summary."
+      },
+      {
+        "type": "ai",
+        "content": "Fetching today's news summary for you.",
+        "tool_calls": [
+          {
+            "name": "get_daily_news_summary",
+            "args": {
+              "query": "today's summary"
+            }
+          }
+        ]
+      },
+      {
+        "type": "human",
+        "content": "Can you also give me a quick daily brief?"
+      },
+      {
+        "type": "ai",
+        "content": "Here's your daily brief.",
+        "tool_calls": [
+          {
+            "name": "get_daily_news_summary",
+            "args": {
+              "query": "daily brief"
+            }
+          }
+        ]
+      }
+    ],
+    "reference_tool_calls": [
+      {
+        "name": "get_daily_news_summary",
+        "args": {
+          "query": "today's summary"
+        }
+      },
+      {
+        "name": "get_daily_news_summary",
+        "args": {
+          "query": "daily brief"
+        }
+      }
+    ]
+  },
+  {
+    "name": "calendar_tool_call",
+    "description": "Multi-turn conversation testing calendar tools (get_events, create_event)",
+    "user_input": [
+      {
+        "type": "human",
+        "content": "What's on my calendar for this weekend?"
+      },
+      {
+        "type": "ai",
+        "content": "Checking your calendar for the weekend.",
+        "tool_calls": [
+          {
+            "name": "get_calendar_events",
+            "args": {
+              "start_time": "2026-02-14T00:00:00",
+              "end_time": "2026-02-16T23:59:59",
+              "max_results": 10
+            }
+          }
+        ]
+      },
+      {
+        "type": "human",
+        "content": "Schedule a team standup on Monday at 9am for 30 minutes."
+      },
+      {
+        "type": "ai",
+        "content": "Creating the standup event.",
+        "tool_calls": [
+          {
+            "name": "create_calendar_event",
+            "args": {
+              "summary": "Team standup",
+              "start_time": "2026-02-16T09:00:00",
+              "end_time": "2026-02-16T09:30:00"
+            }
+          }
+        ]
+      }
+    ],
+    "reference_tool_calls": [
+      {
+        "name": "get_calendar_events",
+        "args": {
+          "start_time": "2026-02-14T00:00:00",
+          "end_time": "2026-02-16T23:59:59",
+          "max_results": 10
+        }
+      },
+      {
+        "name": "create_calendar_event",
+        "args": {
+          "summary": "Team standup",
+          "start_time": "2026-02-16T09:00:00",
+          "end_time": "2026-02-16T09:30:00"
+        }
+      }
+    ]
+  },
+  {
+    "name": "email_tool_call",
+    "description": "Multi-turn conversation testing send_email_to_abhinav tool calls",
+    "user_input": [
+      {
+        "type": "human",
+        "content": "Send an email to Abhinav with subject 'Meeting reminder' and body 'Don't forget our 3pm sync tomorrow.'"
+      },
+      {
+        "type": "ai",
+        "content": "Sending that email to Abhinav now.",
+        "tool_calls": [
+          {
+            "name": "send_email_to_abhinav",
+            "args": {
+              "subject": "Meeting reminder",
+              "body": "Don't forget our 3pm sync tomorrow."
+            }
+          }
+        ]
+      },
+      {
+        "type": "human",
+        "content": "Also email Abhinav about the project update - subject 'Q1 status' and body 'Please find the Q1 project status attached.'"
+      },
+      {
+        "type": "ai",
+        "content": "Sending the project update email.",
+        "tool_calls": [
+          {
+            "name": "send_email_to_abhinav",
+            "args": {
+              "subject": "Q1 status",
+              "body": "Please find the Q1 project status attached."
+            }
+          }
+        ]
+      }
+    ],
+    "reference_tool_calls": [
+      {
+        "name": "send_email_to_abhinav",
+        "args": {
+          "subject": "Meeting reminder",
+          "body": "Don't forget our 3pm sync tomorrow."
+        }
+      },
+      {
+        "name": "send_email_to_abhinav",
+        "args": {
+          "subject": "Q1 status",
+          "body": "Please find the Q1 project status attached."
+        }
+      }
+    ]
+  }
+]

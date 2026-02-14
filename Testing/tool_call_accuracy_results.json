@@ -1,0 +1,14 @@
+[
+  {
+    "name": "news_tool_call",
+    "tool_call_accuracy": 1.0
+  },
+  {
+    "name": "calendar_tool_call",
+    "tool_call_accuracy": 1.0
+  },
+  {
+    "name": "email_tool_call",
+    "tool_call_accuracy": 1.0
+  }
+]

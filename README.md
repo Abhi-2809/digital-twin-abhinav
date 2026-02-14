@@ -1,4 +1,4 @@
-# Digital Twin — Question-Answering Over Your Documents with Citations and Agentic Tools
+# Abhinav's Digital Twin - Question-Answering Over Your Documents with Citations and Agentic Tools
 
 This project builds a **digital twin** that answers questions as you would, using your own personal and professional documents. Responses are **grounded in your documents** and **cite sources** so you can see where each claim comes from. The twin has **agentic capabilities** via tools such as Google Calendar (list, create, delete events), Gmail (send email), and a daily news summarizer based on custom topics and sources. Response quality is **evaluated using the RAGAS framework** (faithfulness, answer relevancy, noise sensitivity).
 

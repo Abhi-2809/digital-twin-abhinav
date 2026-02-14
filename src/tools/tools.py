@@ -136,8 +136,7 @@ def delete_calendar_event(event_id: str) -> Dict[str, Any]:
         if not event_id or not event_id.strip():
             return {"error": "Event ID is required to delete an event"}
         
-        result = 
-        (event_id.strip())
+        result = delete_event(event_id.strip())
         return result
     
     except Exception as e:

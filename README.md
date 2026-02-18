@@ -203,7 +203,7 @@ A user **query** first hits the **agent** (LangGraph). The agent decides whether
 **Evaluation**
 
 - Used a set of **13 test queries** (curated by me), run against the pipeline and scored with RAGAS.
-- Evaluated using only fact-based queries for now (Noise Sensitivity was high along with the correct answer other extra information was also being generated so i modified the prompt to make it strictly answer to the point later)
+- Evaluated using only fact-based queries for now (Noise Sensitivity was high and answer relevancy was low, along with the correct answer other extra information was also being generated so i modified the prompt to make it strictly answer to the point later)
 
 | Model         | Noise sensitivity | Answer relevancy | Faithfulness | Avg time (s) | Avg cost   |
 |---------------|-------------------|------------------|--------------|---------------|------------|
